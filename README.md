@@ -4,7 +4,6 @@
 [![Node.js](https://img.shields.io/badge/Node.js-43853D?logo=node.js&logoColor=white)](https://nodejs.org/)  
 [![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)](https://react.dev/)  
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?logo=postgresql&logoColor=white)](https://www.postgresql.org/)  
-[![GitHub last commit](https://img.shields.io/github/last-commit/ntua-el19120/Logicare-Speech-Therapy-Web-app)](https://github.com/ntua-el19120/Logicare-Speech-Therapy-Web-app)
 
 A **full-stack web application** for managing and delivering speech therapy exercises.  
 Fully containerized with **Docker**, powered by a **PostgreSQL database**, **Node.js backend**, and **React (Vite) frontend**.
