@@ -1,5 +1,3 @@
-Got it 👍 Here’s the cleaned-up **README.md** content that you can copy-paste directly into a file named `README.md` in the root of your project:
-
 ````markdown
 # Logicare Speech Therapy Web App
 
