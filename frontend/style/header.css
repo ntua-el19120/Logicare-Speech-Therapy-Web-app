@@ -1,0 +1,162 @@
+:root { --header-h: 64px; }
+
+.app-header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: var(--header-h);
+  width: 100%;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0 16px;
+  background: rgb(157,37,36);
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.app-header__brand { 
+  display: inline-flex; 
+  align-items: center; 
+}
+
+.app-header__logo { 
+  border-radius: 50%; 
+  height: 50px; 
+  width: 50px; 
+  object-fit: contain; 
+}
+
+.app-header__welcome {
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.app-header__role { text-transform: capitalize; }
+.app-header__name { text-transform: capitalize; }
+
+.app-header__spacer { flex: 1; } /* pushes logout to the far right */
+
+.app-header__link {
+  color: #e3f2fd;
+  text-decoration: none;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+}
+
+.app-header__link:hover { 
+  background: rgba(255,255,255,0.15); 
+}
+
+.app-header__logout {
+  margin-left: 0.5rem;
+  background: #fff;
+  border: none;
+  color: rgb(157,37,36);
+  padding: 0.45rem 0.9rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.app-header__logout:hover { 
+  background: rgb(232,208,208); 
+}
+
+@media (max-width: 520px) {
+  .app-header {
+    flex-wrap: wrap;
+  }
+
+  .app-header__welcome {
+    width: 100%;
+    order: 3;
+    text-align: center;
+    white-space: normal;
+    margin-top: 4px;
+  }
+}
+
+.app-header-spacer { 
+  height: var(--header-h); 
+} /* pushes page content below header */
+
+
+.app-header__notifications {
+    position: relative;
+    margin-right: 1rem;
+}
+
+.notification-button {
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.notification-badge {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    background: red;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 2px 6px;
+}
+
+/* Dropdown */
+.notification-dropdown {
+    position: absolute;
+    top: 2.5rem;
+    right: 0;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
+    padding: 1rem;
+    width: 260px;
+    z-index: 1000;
+}
+
+.notification-dropdown h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.notification-dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.notification-dropdown li {
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+}
+
+
+.notification-dropdown {
+  background: #fff;
+  color: #000;         /* μαύρο κείμενο */
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  min-width: 200px;    /* για να έχει πλάτος */
+  z-index: 1000;
+}
+
+.notification-dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.notification-dropdown li {
+  margin-bottom: 0.5rem;
+  font-size: 14px;
+  color: rgb(157,37,36);         
+}

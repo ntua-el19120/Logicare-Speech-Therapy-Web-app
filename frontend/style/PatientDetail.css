@@ -1,0 +1,74 @@
+.notes-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.notes-label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+
+.notes-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.notes-status {
+  font-size: 12px;
+  color: #666;
+}
+
+.notes-textarea {
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 14px;
+  background-color: transparent; /* blends with card */
+  resize: vertical; /* optional */
+  width: 90%; /* slightly smaller than full width */
+  margin: 0 auto; /* centers it */
+  display: block; /* required for margin auto to work */
+}
+
+.notes-textarea:focus {
+  outline: none;
+  background-color: #fff; /* optional focus effect */
+}
+
+.assign-button {
+  background-color: #a02222; /* same red */
+  color: white;
+  border-radius: 9999px;
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.assign-button:hover {
+  opacity: 0.9;
+}
+.fab-assign {
+  position: fixed;
+  bottom: 20px;  /* Keep at bottom */
+  right: 100px;  /* Shift left so it doesn’t overlap the back button */
+  background-color: #a02222;
+  color: white;
+  border: none;
+  border-radius: 9999px;
+  padding: 12px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+.fab-assign:hover {
+  opacity: 0.9;
+}
+

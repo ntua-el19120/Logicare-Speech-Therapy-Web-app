@@ -1,0 +1,125 @@
+/* Container */
+.manage-users {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "Segoe UI", Roboto, sans-serif;
+}
+
+/* Title */
+.manage-users h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #333;
+}
+
+/* Filters */
+.manage-users .filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.manage-users select,
+.manage-users input[type="text"] {
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  min-width: 200px;
+  font-size: 0.95rem;
+  transition: border 0.2s ease;
+}
+
+.manage-users select:focus,
+.manage-users input[type="text"]:focus {
+  outline: none;
+  border-color: #2563eb; /* nice blue */
+}
+
+/* Table */
+.manage-users table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.manage-users thead {
+  background: #f3f4f6;
+  color: #333;
+}
+
+.manage-users th,
+.manage-users td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+.manage-users tr:hover {
+  background: #fafafa;
+}
+
+/* Actions */
+.manage-users td.actions {
+  text-align: center;
+  white-space: nowrap;
+}
+
+.manage-users button {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  border: none;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.manage-users button:hover {
+  transform: scale(1.05);
+}
+
+.manage-users .reset-btn {
+  background: #fbbf24;
+  color: white;
+  margin-right: 0.5rem;
+}
+
+.manage-users .reset-btn:hover {
+  background: #f59e0b;
+}
+
+.manage-users .delete-btn {
+  background: #ef4444;
+  color: white;
+}
+
+.manage-users .delete-btn:hover {
+  background: #dc2626;
+}
+
+/* Message box */
+.manage-users .message {
+  margin-bottom: 1rem;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.manage-users .message.success {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.manage-users .message.error {
+  background: #fee2e2;
+  color: #991b1b;
+}

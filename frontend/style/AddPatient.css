@@ -1,0 +1,59 @@
+.add-patient-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.add-patient-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  max-width: 500px;
+  width: 100%;
+}
+
+.add-patient-card h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: rgb(157,37,36);
+}
+
+.add-patient-card label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 1rem;
+}
+
+.add-patient-card input,
+.add-patient-card textarea {
+  padding: .55rem .7rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.add-patient-card input:focus,
+.add-patient-card textarea:focus {
+  border-color: rgb(157,37,36);
+  box-shadow: 0 0 0 3px rgba(157,37,36,.15);
+}
+
+.add-patient-actions {
+  margin-top: 16px;
+  text-align: center;
+}
+
+.add-patient-card h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: black; /* Title is now black */
+}
+
+.add-patient-card label strong {
+  color: rgb(157,37,36); /* Attributes in red */
+  font-weight: bold;
+}

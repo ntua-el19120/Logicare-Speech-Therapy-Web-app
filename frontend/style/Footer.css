@@ -1,0 +1,28 @@
+/* Footer.css */
+.app-footer {
+  background-color: #8b0000;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+}
+
+.footer-sub {
+  font-size: 0.8rem;
+  opacity: 0.8;
+  margin-top: 0.3rem;
+}
+
+/* 🔥 Για να κολλήσει στο κάτω μέρος */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* όλο το ύψος */
+}
+
+.page-content {
+  flex: 1; /* πιάνει όλο τον κεντρικό χώρο */
+}

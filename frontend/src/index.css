@@ -1,0 +1,347 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+
+
+
+
+/* 1. Make the step container a positioning context and add vertical spacing */
+.exercise-step {
+  position: relative;
+  margin-bottom: 2rem;       /* space below each step */
+  padding-bottom: 3rem;      /* extra bottom to clear the Remove button */
+}
+/* Space out every direct child by 1rem */
+.exercise-step > * {
+  margin-bottom: 1rem;
+}
+/* Don’t add extra margin after the Remove button */
+.exercise-step > button {
+  margin-bottom: 0;
+}
+
+/* 2. Utility positioning for the Remove button */
+.absolute {
+  position: absolute;
+}
+
+.right-4 {
+  right: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 1) Make the step container a positioning context */
+.Exercise.step {
+  position: relative;
+}
+
+
+.bottom-4 {
+  bottom: 1rem;   /* adjust as needed */
+}
+.right-4 {
+  right: 1rem;    /* adjust as needed */
+}
+
+
+
+.Centering{
+    justify-content: center;  /* center horizontally */
+    text-align: center;
+    align-items: center;
+}
+
+
+/* 
+.space-y-6{
+   max-width: 28rem;      
+  margin: 0 auto 1rem;   
+  text-align: center;  
+} */
+
+
+.bundle-metadata {
+  max-width: 28rem;      /* about 448px */
+  margin: 0 auto 1rem;   /* auto left/right, 1rem bottom */
+  text-align: center;    /* center labels and inline elements */
+}
+
+/* Make its text inputs full width */
+.bundle-metadata input[type="text"] {
+  display: block;
+  width: 100%;
+  margin: 0.25rem auto 0;       /* center with auto left/right */
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;    /* light gray */
+  border-radius: 0.375rem;
+  box-sizing: border-box;
+}
+
+/* Center the checkbox row */
+.bundle-metadata .checkbox-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+html, body, #root { height: 100%; }
+body {
+  margin: 0;
+  min-width: 320px;
+  background: inherit; /* keep your theme */
+}
+#root {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column; /* header on top, content below */
+}
+
+
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+
+
+
+
+/* Loading & error */
+.bd-loading {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.25rem;
+}
+.bd-error {
+  color: #c00;
+}
+
+/* Header */
+.bd-header {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.bd-title {
+  margin: 0;
+  font-size: 2rem;
+}
+.bd-edit {
+  font-size: 0.9rem;
+  color: #0066cc;
+  text-decoration: none;
+}
+.bd-edit:hover {
+  text-decoration: underline;
+}
+
+/* Step card */
+.bd-step-card {
+  background: #fafafa;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+.bd-step-number {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #555;
+}
+.bd-step-title {
+  margin: 0.25rem 0 0.75rem;
+  font-size: 1.25rem;
+}
+.bd-description {
+  margin: 0 0 1rem;
+  line-height: 1.4;
+  color: #444;
+}
+
+/* Media */
+.bd-media {
+  text-align: center;
+}
+.bd-audio {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+
+
+.bd-button {
+  padding: 0.5rem 1rem;
+  background: #eee;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.bd-button:hover:not([disabled]) {
+  background: #ddd;
+}
+.bd-button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+.bd-counter {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* BundleDetail container */
+/* make the container fluid on very small screens */
+.bd-container {
+  max-width: 800px;
+  width: 90%;              /* fluid: 90% of viewport */
+  margin: 2rem auto;
+  padding: 0 1rem;
+  font-family: sans-serif;
+  color: #333;
+}
+
+/* ensure media scales down */
+.bd-image,
+.bd-video {
+  max-width: 100%;
+  height: auto;            /* maintain aspect ratio */
+  max-height: 300px;       /* limit height on small screens */
+}
+
+/* shrink text on small phones */
+@media (max-width: 480px) {
+  .bd-title {
+    font-size: 1.5rem;
+  }
+  .bd-step-number {
+    font-size: 1.25rem;
+  }
+  .bd-step-title {
+    font-size: 1rem;
+  }
+  .bd-description {
+    font-size: 0.9rem;
+  }
+  .bd-button {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* stack navigation on very narrow screens */
+@media (max-width: 400px) {
+  .bd-nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .bd-counter {
+    order: -1;  /* put counter on top */
+    text-align: center;
+  }
+}
+
+
+
+.create-exercise-set {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.create-exercise-set h1,
+.create-exercise-set h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.create-exercise-set form > .actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.bd-title { text-align: center; }
+
+
